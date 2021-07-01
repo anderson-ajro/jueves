@@ -25,6 +25,4 @@ if ('serviceWorker' in navigator) {
   
       if(!navigator.onLine){
       window.location.href = 'offline.html';
-    } else {
-      window.location.href = 'index.html';
-      }
+    } 
