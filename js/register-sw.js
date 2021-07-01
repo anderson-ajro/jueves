@@ -16,6 +16,10 @@ if ('serviceWorker' in navigator) {
   // Es decir, no se disparo los eventos de arriba aun, y necesito conocer el estado.
   // 
   
-      if(!navigator.onLine){
-      window.location.href = 'offline.html';
-    } 
+ window.addEventListener('offline', event => {
+    document.querySelector('body').classList.add('offline');
+  });
+  
+  window.addEventListener('online', event => {
+    document.querySelector('body').classList.remove('offline');
+  });
