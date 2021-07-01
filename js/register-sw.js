@@ -23,6 +23,8 @@ if ('serviceWorker' in navigator) {
   // Es decir, no se disparo los eventos de arriba aun, y necesito conocer el estado.
   // 
   
-    if(!navigator.onLine){
+      if(!navigator.onLine){
       window.location.href = 'offline.html';
-  }
+    } else {
+      window.location.href = 'index.html';
+      }
