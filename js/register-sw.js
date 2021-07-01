@@ -10,13 +10,6 @@ if ('serviceWorker' in navigator) {
   }
   
   // Event Listener para Offline/ Online Status
-  window.addEventListener('offline', event => {
-    document.querySelector('body').classList.add('offline');
-  });
-  
-  window.addEventListener('online', event => {
-    document.querySelector('body').classList.remove('offline');
-  });
   
   // A veces este evento falla, ojo!
   // Sirve para saber si el navegador esta offline, cuando entramos offline. 
